@@ -39,7 +39,7 @@ public class Controller {
      */
     @GetMapping("/lab1")
     public ResponseEntity lab1(){
-        return null;
+        return ResponseEntity.status(400).body("Bad Request");
     }
     /**
      * TODO: return a ResponseEntity containing a response of type "Resource Created", setting the "content-length"
@@ -47,7 +47,7 @@ public class Controller {
      * body.
      */
     @GetMapping("/lab2")
-    public ResponseEntity lab2(@RequestBody Sample sample){
-        return null;
+    public ResponseEntity lab2(@RequestBody Sample sample){     // Unlike in JavaScript seems like order does indeed matter .status() 1st ... 
+        return ResponseEntity.status(201).header("content-length", "100").body(sample);
     }
 }
