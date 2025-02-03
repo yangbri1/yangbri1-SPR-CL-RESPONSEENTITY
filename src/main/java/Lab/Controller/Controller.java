@@ -48,6 +48,6 @@ public class Controller {
      */
     @GetMapping("/lab2")
     public ResponseEntity lab2(@RequestBody Sample sample){     // Unlike in JavaScript seems like order does indeed matter .status() 1st ... 
-        return ResponseEntity.status(201).header("content-length", "100").body(sample);
+        return ResponseEntity.status(201).header("content-length", "100").body(sample);     // set .status() of HTTP response to 201 as that's status code for successful obj creation
     }
 }

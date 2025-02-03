@@ -1,0 +1,7 @@
+commit 2e0e7c21667738ad10aafede091fd0f276055827
+Author: Brian Yang <yangbri1@msu.edu>
+Date:   Mon Feb 3 02:56:34 2025 +0000
+
+    Created customized HTTP Responses' status & body messages to user displaying whether or not the HTTP request to the server was successful. Any problems that may had arose either from the user or the backend, etc.
+
+ 2 files changed, 3 insertions(+), 3 deletions(-)
